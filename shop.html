@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop List</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./shopStyle.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body style="background-color: rgb(236, 231, 231);">
+    <!-- Header Start -->
+    <header id="home">
+      <div class="logo">
+        <img src="./image/brand.svg" alt="" />
+      </div>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+          <div class="logo">
+            <img src="./image/brand.svg" alt="" />
+            <label for="nav_check" class="hamburger">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </label>
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="shop.html" class="active">Shop</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <a href="">Notification</a>
+            </li>
+          </ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </header>
+    <!-- Header End -->
+
+    <div class="text-center mt-5">
+        <div class="row">
+            <h1 class="text-muted mx-2" style="font-family: 'Rowdies', cursive;">Maubin Online Shopping</h1>
+        </div>
+    </div>
+    <!-- Search Bar Start -->
+    <section class="container search" style="width: 70%;">
+      <form action="">
+        <i class="fas fa-search"></i>
+        <input
+          type="text"
+          name=""
+          id="search-item"
+          placeholder="Search Shop List"
+          onkeyup="search()"
+        />
+      </form>
+    </section>
+    <!-- Search Bar End -->
+
+    <div class="mt-4 mx-5 px-5">
+        <div class="row">
+            <div class="col px-5 d-flex justify-content-center flex-wrap gap-2">
+               <a href="shop.html" class="col-lg-1 btn btn-primary">All</a>
+               <a href="" class="col-lg-1 btn btn-outline-secondary">Mobile</a>
+               <a href="" class="col-lg-1 btn btn-outline-secondary">Food</a>
+               <a href="" class="col-lg-1 btn btn-outline-secondary">Clothes</a>
+               <a href="" class="col-lg-1 btn btn-outline-secondary">Cosmetic</a>
+               <a href="" class="col-lg-1 btn btn-outline-secondary">Health</a>
+               <a href="" class="col-lg-1 btn btn-outline-secondary">Stores</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shop List Start -->
+    <div class="mt-4">
+       <div class="row px-3" style="background-color: rgb(236, 231, 231);">
+      <div class="container gap-4" id="shopList" style="background-color: rgb(236, 231, 231);">
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="shop card">
+                <img src="./image/shop1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body"> 
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Lin Tar Yar</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Mobile Sales Services</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="shop card">
+                <img src="./image/shop2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Mobile Nan Daw</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Beautifuls</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="card shop">
+                <img src="./image/shop3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Idea</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Foods</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="card shop">
+                <img src="./image/shop4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Dream Mobile</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Mobile Phone Sales & Services</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="card shop">
+                <img src="./image/shop1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Venus Mobile</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Mobile Phone Sales & Services</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="card shop">
+                <img src="./image/shop2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Shwe Pone Yeik</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Mobile Phone Sales & Services</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="card shop">
+                <img src="./image/shop3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Daw Pu</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Mobile Phone Sales & Services</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="card shop">
+                <img src="./image/shop4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Du Won Electronic</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Mobile Phone Sales & Services</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="card shop">
+                <img src="./image/shop1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Moe Cafe</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Mobile Phone Sales & Services</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="card shop">
+                <img src="./image/shop2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Kyal Sin Lin</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Mobile Phone Sales & Services</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="card shop">
+                <img src="./image/shop3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Yar Zar Cafe</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Mobile Phone Sales & Services</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.google.com" class="text-decoration-none">
+            <div class="card shop">
+                <img src="./image/shop4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-decoration-underline" style="color: #151592;"><b>Daw Hla Aye</b></h5>
+                    <small class="fs-6 fw-bold" style="color: #c6089a;">Mobile Phone Sales & Services</small>
+                    <p class="fs-6"><i class="fa-solid fa-location-dot" style="color: #64bf09;"></i>
+                        No.112,(8)Streets,Maubin</p>
+                </div>
+            </div>
+        </a>
+
+      </div>
+    </div>
+   </div>
+    <!-- Shop List End -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./app.js"></script>
+</html>
