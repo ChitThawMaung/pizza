@@ -24,7 +24,7 @@ body {
     background-color: transparent;
     width: 60%;
     border-bottom: 2px solid #110f29;
-    padding: 1em 0.3em;
+    padding: 10px 15px;
 }
 
 #search-container input:focus {

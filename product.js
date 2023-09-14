@@ -1,10 +1,16 @@
 let products = {
   data: [
     {
-      productName: "Regular White T-Shirt",
-      category: "Topwear",
-      price: "30",
+      productName: "Lin Tar Yar",
+      category: "Mobile",
+      price: "No.56,7 street,Maubin.",
       image: "./image/shop1.jpg",
+    },
+    {
+      productName: "Du Won",
+      category: "Mobile",
+      price: "No.16,5 street,Maubin.",
+      image: "./image/shop2.jpg",
     },
     {
       productName: "Beige Short Skirt",
