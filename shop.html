@@ -53,7 +53,7 @@
               <a href="about.html">About</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="search.html">Contact</a>
             </li>
             <li>
               <a href="">Notification</a>
@@ -88,14 +88,21 @@
 
     <div class="mt-4 mx-5 px-5">
         <div class="row">
-            <div class="col px-5 d-flex justify-content-center flex-wrap gap-2">
-               <a href="shop.html" class="col-lg-1 btn btn-primary">All</a>
-               <a href="" class="col-lg-1 btn btn-outline-secondary">Mobile</a>
-               <a href="" class="col-lg-1 btn btn-outline-secondary">Food</a>
-               <a href="" class="col-lg-1 btn btn-outline-secondary">Clothes</a>
-               <a href="" class="col-lg-1 btn btn-outline-secondary">Cosmetic</a>
-               <a href="" class="col-lg-1 btn btn-outline-secondary">Health</a>
-               <a href="" class="col-lg-1 btn btn-outline-secondary">Stores</a>
+            <div class="col px-5 d-flex justify-content-center flex-wrap gap-2" id="buttons">
+               <a href="shop.html" class="button-value col-lg-1 btn btn-primary"
+               onclick="filterProduct('all')">All</a>
+               <a href="" class="button-value col-lg-1 btn btn-outline-secondary"
+               onclick="filterProduct('mobile')">Mobile</a>
+               <a href="" class="button-value col-lg-1 btn btn-outline-secondary"
+               onclick="filterProduct('food')">Food</a>
+               <a href="" class="button-value col-lg-1 btn btn-outline-secondary"
+               onclick="filterProduct('clothes')">Clothes</a>
+               <a href="" class="button-value col-lg-1 btn btn-outline-secondary"
+               onclick="filterProduct('cosmetic')">Cosmetic</a>
+               <a href="" class="button-value col-lg-1 btn btn-outline-secondary"
+               onclick="filterProduct('health')">Health</a>
+              <a href="" class="button-value col-lg-1 btn btn-outline-secondary"
+               onclick="filterProduct('store')">Store</a>
             </div>
         </div>
     </div>

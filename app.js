@@ -12,7 +12,7 @@ const search = () =>{
             let textvalue = match.textContent || match.innerHTML
 
             if(textvalue.toUpperCase().indexOf(searchbox) > -1){
-                shop[i].style.display = "";
+                shop[i].style.display = "block";
 
             }else{
                 shop[i].style.display = "none";
